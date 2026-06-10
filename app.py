@@ -566,7 +566,7 @@ if menu == "Home":
         </div>
         <div style='font-size:14px;font-weight:400;color:#64748b;max-width:520px;line-height:1.7;'>
             Sistem analisis perilaku pelanggan berbasis Data Mining menggunakan K-Means Clustering
-            dan Apriori Association Rules untuk mendukung strategi pemasaran berbasis data.
+            dan FP-Growth Association Rules untuk mendukung strategi pemasaran berbasis data.
         </div>
         <div style='display:flex;gap:12px;margin-top:20px;flex-wrap:wrap;'>
             <div style='background:#1e3a8a;border:1px solid #2563eb;border-radius:6px;
@@ -575,7 +575,7 @@ if menu == "Home":
             </div>
             <div style='background:#14532d;border:1px solid #16a34a;border-radius:6px;
                         padding:6px 16px;font-size:12px;font-weight:600;color:#86efac;'>
-                Apriori Association Rules
+                FP-Growth
             </div>
             <div style='background:#3b0764;border:1px solid #7e22ce;border-radius:6px;
                         padding:6px 16px;font-size:12px;font-weight:600;color:#d8b4fe;'>
@@ -593,7 +593,7 @@ if menu == "Home":
     <div style='background:#111827;border:1px solid #1e2d47;border-radius:10px;padding:20px 24px;'>
         <p style='font-size:14px;color:#94a3b8;line-height:1.8;margin:0;'>
             Proyek ini bertujuan untuk mengidentifikasi pola pembelian pelanggan menggunakan pendekatan
-            K-Means Clustering dan Apriori Association Rules Mining. Dengan memanfaatkan data transaksi
+            K-Means Clustering dan FP-Growth Association Rules Mining. Dengan memanfaatkan data transaksi
             historis dari UCI Online Retail Dataset, model ini mengelompokkan pelanggan ke dalam segmen
             yang actionable untuk mendukung strategi pemasaran berbasis data.
             <br><br>
@@ -688,7 +688,7 @@ if menu == "Home":
         ("Dataset Overview", "#3b82f6", "Eksplorasi statistik deskriptif, distribusi RFM, dan sampel data transaksi."),
         ("Prediction", "#22c55e", "Prediksi segmen pelanggan baru via ID atau input manual nilai RFM."),
         ("Visualization", "#a78bfa", "Visualisasi interaktif klaster, association rules, dan tren penjualan."),
-        ("About", "#f59e0b", "Penjelasan metode K-Means, Apriori, dan kerangka CRISP-DM yang digunakan."),
+        ("About", "#f59e0b", "Penjelasan metode K-Means, FP-Growth, dan kerangka CRISP-DM yang digunakan."),
     ]
     for fcol, (title, color, desc) in zip(feat_cols, features):
         fcol.markdown(f"""
@@ -1041,7 +1041,7 @@ elif menu == "Visualization":
     # -- Sub-navigasi visualisasi --
     viz_tab1, viz_tab2, viz_tab3 = st.tabs([
         "Segmentasi Pelanggan",
-        "Pola Pembelian (Apriori)",
+        "Pola Pembelian (FP-Growth)",
         "Tren Penjualan",
     ])
 
@@ -1406,10 +1406,10 @@ elif menu == "About":
                     padding:20px;height:100%;'>
             <div style='font-size:13px;font-weight:800;color:#22c55e;
                         letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;'>
-                Apriori — Association Rule Mining
+                FP-Growth — Association Rule Mining
             </div>
             <p style='font-size:13px;color:#94a3b8;line-height:1.8;'>
-                Algoritma Apriori digunakan untuk menemukan frequent itemsets dan menghasilkan
+                Algoritma FP-Growth digunakan untuk menemukan frequent itemsets dan menghasilkan
                 aturan asosiasi dari data transaksi pelanggan. Tiga metrik utama yang digunakan
                 adalah Support (frekuensi kemunculan bersama), Confidence (probabilitas
                 kondisional), dan Lift (kekuatan asosiasi relatif terhadap peluang acak).
