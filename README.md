@@ -192,6 +192,7 @@ Universitas Negeri Surabaya (UNESA)
 ##  Pengembang
 
 **Moh Viko Nur Huda | 24051214076
+
 Moh Fajrul Falah    | 24051214076**
 
 Project Akhir Mata Kuliah Data Mining
